@@ -37,7 +37,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         searchResultsController.tableView.dataSource = self
         searchResultsController.tableView.delegate = self
         
-        searchResultsController.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "mySearchID")
+        searchResultsController.tableView.register(searchBarTableViewCell.self, forCellReuseIdentifier: "mySearchID")
         
         
     }
@@ -77,7 +77,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         if tableView == myTableView {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as? searchBarTableViewCell {
                 for _ in myProduct {
-                    cell.textLabel?.text = myProduct[indexPath.row]
+                    cell.myNameLabel.text = myProduct[indexPath.row]
                 }
                 return cell
             } else {
@@ -89,9 +89,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             print("是否有進入 ")
             if let cell = tableView.dequeueReusableCell(withIdentifier: "mySearchID", for: indexPath) as? searchBarTableViewCell {
                 
-                print("沒有出現這一行。 轉型失敗。。。。Why ?????????")
+               
                 for _ in resultArray {
-                    cell.textLabel?.text = resultArray[indexPath.row]
+                    print("cell.myNameLabel.text   is  nil ?????????")
+                    cell.myNameLabel.text = resultArray[indexPath.row]
                 }
                 return cell
             } else {

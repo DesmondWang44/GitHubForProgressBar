@@ -10,6 +10,7 @@ import UIKit
 
 class searchBarTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var myNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
