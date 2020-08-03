@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" rowHeight="-1" id="KGk-i7-Jjw" customClass="SaleProductDetailTableViewCell" customModule="KidFunLand" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkI-dj-47h">
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7N-Ag-TmQ">
+                                <rect key="frame" x="2" y="2" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h7N-Ag-TmQ" secondAttribute="height" id="TcN-nx-JYg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="這個一個產品名稱...prodcutname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etv-Kj-sEj">
+                                <rect key="frame" x="56" y="8" width="295" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ 10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="992-MJ-7Jb">
+                                <rect key="frame" x="291" y="30" width="58" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="h7N-Ag-TmQ" secondAttribute="bottom" constant="2" id="FPx-HX-YgW"/>
+                            <constraint firstAttribute="height" constant="50" id="YAE-0C-6WX"/>
+                            <constraint firstItem="h7N-Ag-TmQ" firstAttribute="leading" secondItem="YkI-dj-47h" secondAttribute="leading" constant="2" id="na9-XP-ctK"/>
+                            <constraint firstItem="h7N-Ag-TmQ" firstAttribute="top" secondItem="YkI-dj-47h" secondAttribute="top" constant="2" id="yir-gk-ZNu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YkI-dj-47h" secondAttribute="trailing" id="hBs-eq-xZB"/>
+                    <constraint firstAttribute="bottom" secondItem="YkI-dj-47h" secondAttribute="bottom" id="hgY-nG-SO9"/>
+                    <constraint firstItem="YkI-dj-47h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jiQ-ex-tsj"/>
+                    <constraint firstItem="YkI-dj-47h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="peV-HG-deq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ProductNmae" destination="etv-Kj-sEj" id="Fd3-Uh-e5T"/>
+                <outlet property="ProductPic" destination="h7N-Ag-TmQ" id="ieS-mq-8lv"/>
+                <outlet property="ProductPrice" destination="992-MJ-7Jb" id="m7n-Xv-mtE"/>
+            </connections>
+            <point key="canvasLocation" x="47.10144927536232" y="31.138392857142854"/>
+        </tableViewCell>
+    </objects>
+</document>
